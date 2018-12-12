@@ -1,0 +1,17 @@
+<?php
+@extends('layouts.master')
+
+
+@section('content')
+    <h1>Practice</h1>
+    @foreach($methods as $method)
+        <a href='{{ str_replace('practice', '/practice/', $method) }}'> {{ $method }}</a><br>
+    @endforeach
+@endsection
+
+/**
+ * Created by PhpStorm.
+ * User: s999b
+ * Date: 11/28/2018
+ * Time: 6:11 PM
+ */
